@@ -1,0 +1,46 @@
+{
+  "name": "cardplayer-odds-calculator",
+  "version": "1.0.0",
+  "description": "Card Player magazine fast poker odds calculator",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "",
+    "compile": "babel -d dist/ src/",
+    "prepublish": "npm test && npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openhud/cardplayer-odds-calculator.git"
+  },
+  "keywords": [
+    "card player",
+    "poker odds calculator",
+    "texas holdem",
+    "omaha holdem"
+  ],
+  "author": "Danny Leshem <dleshem@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openhud/cardplayer-odds-calculator/issues"
+  },
+  "homepage": "https://github.com/openhud/cardplayer-odds-calculator",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-plugin-transform-strict-mode": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-register": "^6.18.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
