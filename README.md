@@ -11,7 +11,7 @@ import OddsCalculator from 'cardplayer-odds-calculator';
 
 const oddsCalculator = new OddsCalculator();
 
-// Example 1: Tom Dwan vs Barry Greenstein (https://www.youtube.com/watch?v=OColG3ceE_Q)
+// Example 1: Barry Greenstein vs Tom Dwan (https://www.youtube.com/watch?v=OColG3ceE_Q)
 const odds1 = await oddsCalculator.texasHoldem({holes: [['Ad', 'Ac'], ['Ks', 'Qs']], community: ['4s', '2s', 'Qh'], dead: ['Tc', '5h', 'Jc', '4h', '8d', '2d', 'As', 'Kh', '6h', '3s']});
 console.log(odds1);
 //
