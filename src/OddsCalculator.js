@@ -12,7 +12,6 @@ export default class OddsCalculator {
   }
 
   async texasHoldem({holes, community = [], dead = []}) {
-    console.log(community);
     return this._odds(Games.texasHoldem, holes, community, dead);
   }
 
@@ -32,7 +31,6 @@ export default class OddsCalculator {
         });
     });
     const query = params.map(param => `${encodeURIComponent(param[0])}=${encodeURIComponent(param[1])}`).join('&');
-    console.log(`${this._baseUrl}?${query}`);
 
     const response = await axios.get(`${this._baseUrl}?${query}`, {
         timeout: this._timeout,
